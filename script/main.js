@@ -43,7 +43,3 @@ else {
     document.getElementById('price').innerHTML = price
     document.getElementById('if_discount').innerHTML = discount_message
 }
-
-
-
-
