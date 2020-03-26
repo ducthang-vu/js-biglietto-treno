@@ -2,7 +2,7 @@
 
 console.log('main.js is working')
 
-// Default values of: price for km, and discount, discount conditions
+// Default values of: price for km, discount, and discount conditions
 var price_basic = 0.21
 var discount_senior = 0.4
 var discount_junior = 0.2
@@ -22,11 +22,11 @@ var discount_message
 
 
 if (age < age_junior) {
-    price = (price_basic * distance * discount_junior).toFixed(2)
+    price = (price_basic * distance * (1-discount_junior)).toFixed(2)
     discount_message = 'junior'
 }
 else if (age >= age_senior) {
-    price = (price_basic * distance * discount_senior).toFixed(2)
+    price = (price_basic * distance * (1-discount_senior)).toFixed(2)
     discount_message = 'senior'
 }
 else {
