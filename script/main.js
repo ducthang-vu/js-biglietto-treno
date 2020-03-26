@@ -16,23 +16,34 @@ var age = prompt('How old are you?')
 console.log(distance)
 console.log(age)
 
-// return
+// Return
 var price
 var discount_message
 
 
-if (age < age_junior) {
-    price = (price_basic * distance * (1 - discount_junior)).toFixed(2)
-    discount_message = 'Junior client'
-}
-else if (age >= age_senior) {
-    price = (price_basic * distance * (1 - discount_senior)).toFixed(2)
-    discount_message = 'Senior client'
+if (distance == 0 || isNaN(distance) || isNaN(age)) {
+    // Alert if user enter invalid variables
+    alert('You must enter a valid distance and age! Please, reload the page and try again!')
 }
 else {
-    price = (price_basic * distance).toFixed(2)
-    discount_message = 'None'
+    // Main task
+    if (age < age_junior) {
+        price = (price_basic * distance * (1 - discount_junior)).toFixed(2)
+        discount_message = 'Junior client'
+    }
+    else if (age >= age_senior) {
+        price = (price_basic * distance * (1 - discount_senior)).toFixed(2)
+        discount_message = 'Senior client'
+    }
+    else {
+        price = (price_basic * distance).toFixed(2)
+        discount_message = 'None'
+    }
+    
+    document.getElementById('price').innerHTML = price
+    document.getElementById('if_discount').innerHTML = discount_message
 }
 
-document.getElementById('price').innerHTML = price
-document.getElementById('if_discount').innerHTML = discount_message
+
+
+
