@@ -22,11 +22,11 @@ var discount_message
 
 
 if (age < age_junior) {
-    price = (price_basic * distance * (1-discount_junior)).toFixed(2)
+    price = (price_basic * distance * (1 - discount_junior)).toFixed(2)
     discount_message = 'junior'
 }
 else if (age >= age_senior) {
-    price = (price_basic * distance * (1-discount_senior)).toFixed(2)
+    price = (price_basic * distance * (1 - discount_senior)).toFixed(2)
     discount_message = 'senior'
 }
 else {
