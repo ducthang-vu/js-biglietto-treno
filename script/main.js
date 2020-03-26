@@ -5,9 +5,9 @@ console.log('main.js is working')
 // Default values of: price for km, discount, and discount conditions
 var price_basic = 0.21
 var discount_senior = 0.4
-var discount_junior = 0.2
+var discount_young = 0.2
 var age_senior = 65
-var age_junior = 18
+var age_young = 18
 
 // Variables entered by user
 var distance = prompt('Enter voyage length in km: ')
@@ -27,9 +27,9 @@ if (distance == 0 || isNaN(distance) || isNaN(age)) {
 }
 else {
     // Main task
-    if (age < age_junior) {
-        price = (price_basic * distance * (1 - discount_junior)).toFixed(2)
-        discount_message = 'Junior client'
+    if (age < age_young) {
+        price = (price_basic * distance * (1 - discount_young)).toFixed(2)
+        discount_message = 'Young client'
     }
     else if (age >= age_senior) {
         price = (price_basic * distance * (1 - discount_senior)).toFixed(2)

@@ -153,6 +153,7 @@ a {
 
 .discount-table tr:last-child td {
     font-weight: 600;
+    font-size: 110%;
 }
 
 footer .container {
@@ -192,7 +193,7 @@ footer .container {
     .main-content {
         padding: 0;
     }
-    
+
     .wrapper {
         border-radius: 15px;
         order: 1;
