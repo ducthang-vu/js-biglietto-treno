@@ -23,7 +23,7 @@ var discount_message
 
 if (distance == 0 || age <0 || isNaN(distance) || isNaN(age)) {
     // Alert if user enter invalid variables
-    alert('You must enter a valid distance and age.\nPlease, reload the page and try again!')
+    alert('You must enter a valid distance and age.\n\nPlease, reload the page and try again!\n\n')
 }
 else {
     // Main task
