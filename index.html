@@ -8,42 +8,72 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Buy your ticket here!</h1>
-
-        <section class="wrapper">
-            <p>We've selected a ticket based on price and your age</p>
-            <table class="main-content">
+    <div class="container central flex">
+        <header class="header text-center fl-basis-100-sm-md">
+            <h1 class="text-center">Buy your ticket here!</h1>
+        </header>
+        
+        <section class="wrapper central text-center fl-basis-100sm-40md">
+            <p>We've selected a ticket based on voyage length and your age</p>
+            <table class="main-content central">
                 <tr>
                     <th>
-                        Price
+                        Price:
                     </th>
                     <td>
-                        Lorem ipsum dolor sit.
-                        <span id="price"></span>
+                        <span>€<span id="price"></span></span>
                     </td>
                 </tr>
 
                 <tr>
                     <th>
-                        Discount
+                        Discount:
                     </th>
                     <td>
-                        Lorem ipsum dolor sit.
-                        <span id="if_discount"></span>
+                        <span><span id="if_discount"></span></span>
                     </td>
                 </tr>
             </table>
+
             <button class="button flex central">
                 <span>Continue</span>
                 <i class="fas fa-chevron-right"></i>
             </button>
-        </section>
-        
-        <section class="info"></section>
-    </div>
 
-   
+        </section>
+         
+        <section class="info central text-center fl-basis-100sm-40md">
+            <h2>Prices</h2>
+
+            <div class="price">
+                <div>Standard price is:</div>
+                <div class="price-number"> € 0.21 per km</div>
+            </div>
+
+            <div class="discounts">
+                <h3>Discount</h3>
+
+                <table class="discount-table central">
+                    <thead>
+                        <th>Junior</th>
+                        <th>Senior</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Younger than 18</td>
+                            <td>65 or older</td>
+                        </tr>
+    
+                        <tr>
+                            <td>20%</td>
+                            <td>40%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </section>
+    </div>
     
     <script src="script/main.js"></script>
 </body>

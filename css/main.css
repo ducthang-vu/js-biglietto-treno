@@ -1,40 +1,166 @@
-/* General */
-
+/* GENERAL */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body {
+    background-image: url('../img/background.jpg');
+    background-position: bottom;
+}
 
-/* Utilities */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* UTILITIES */
 .flex {
     display: flex;
+}
+
+.fl-basis-100-sm-md {
+    flex-basis: 100%
+}
+
+.fl-basis-100sm-40md{
+    flex-basis: 100%
 }
 
 .central {
     margin: auto;
 }
 
+.text-center {
+    text-align: center;
+}
 
-/*  */
+
+/* CONTAINER and his header */
 .container {
-    width: 1170;
+    flex-wrap: wrap;
+    width: 325px;
     max-width: 90%;
 }
 
+.header h1 {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color: rgb(1, 160, 136);
+}
+
+/* WRAPPER */
+.wrapper {
+    width: 100%;
+    padding: 30px;
+    background: #001848;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.main-content {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.main-content tr > * {
+    padding: 0px 10px;
+    font-weight: 800;
+    font-size: 20px;
+}
 
 .button {
-    padding: 12px 0;
+    height: 55px;
+    padding: 0 10px;
     justify-content: space-around;
     align-items: center;
-    background: #01C3A7;
+    background: rgb(1, 195, 167);
     border: currentColor;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
+    font-size: 150%;
     color: #fff;
 }
 
-.button > * {
-    margin: 0 10px;
+.button:hover {
+    background: rgb(1, 160, 136);
+}
+
+/* INFO */
+.info {
+    width: 100%;
+    padding: 30px;
+    background: snow;
+    color: #000;
+    border-radius: 0 0 10px 10px;
+}
+
+.price {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.price-number {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 120%;
+    font-weight: 600px;
+}
+
+/* info: DISCOUNT part*/
+.discounts {
+    margin-top: 20px;
+}
+
+.discount h3 {
+    margin-bottom: 10px;
+}
+
+.discount-table th,
+.discount-table td {
+    padding: 5px 15px;
+    width: 50%;
+}
+
+.discount-table th:first-child,
+.discount-table td:first-child {
+    border-right: 2px solid #000;
+}
+
+
+.discount-table tr:last-child td {
+    font-weight: 600;
+}
+
+
+/* Responsive */
+@media screen and (min-width: 600px) {
+    .container {
+        width: 800px;
+        max-width: 90%;
+        padding: 40px 0;
+        justify-content: space-between;
+    }
+
+    .header h1 {
+        margin-bottom: 50px;
+        font-size: 250%;
+    }
+
+    .fl-basis-100sm-40md{
+        flex-basis: 40%
+    }
+
+    .wrapper {
+        border-radius: 15px;
+        order: 1;
+    }
+
+    .info {
+        border-radius: 15px;
+    }
 }

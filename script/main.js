@@ -23,15 +23,15 @@ var discount_message
 
 if (age < age_junior) {
     price = (price_basic * distance * (1 - discount_junior)).toFixed(2)
-    discount_message = 'junior'
+    discount_message = 'Junior client'
 }
 else if (age >= age_senior) {
     price = (price_basic * distance * (1 - discount_senior)).toFixed(2)
-    discount_message = 'senior'
+    discount_message = 'Senior client'
 }
 else {
     price = (price_basic * distance).toFixed(2)
-    discount_message = 'none'
+    discount_message = 'None'
 }
 
 document.getElementById('price').innerHTML = price
