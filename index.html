@@ -8,71 +8,71 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="container central flex">
-        <header class="header text-center fl-basis-100-sm-md">
+    <div class="container central">
+        <header class="header text-center">
             <h1 class="text-center">Buy your ticket here!</h1>
         </header>
         
-        <section class="wrapper central text-center fl-basis-100sm-40md">
-            <p>We've selected a ticket based on voyage length and your age</p>
-            <table class="main-content central">
-                <tr>
-                    <th>
-                        Price:
-                    </th>
-                    <td>
-                        <span>€ <span id="price"></span></span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <th>
-                        Discount:
-                    </th>
-                    <td>
-                        <span><span id="if_discount"></span></span>
-                    </td>
-                </tr>
-            </table>
-
-            <button class="button flex central">
-                <span>Continue</span>
-                <i class="fas fa-chevron-right no-display-sm"></i>
-            </button>
-
-        </section>
-         
-        <section class="info central text-center fl-basis-100sm-40md">
-            <h2>Prices</h2>
-
-            <div class="price">
-                <div>Standard price is:</div>
-                <div class="price-number"> € 0.21 per km</div>
-            </div>
-
-            <div class="discounts">
-                <h3>Discount</h3>
-
-                <table class="discount-table central">
-                    <thead>
-                        <th>Junior</th>
-                        <th>Senior</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Younger than 18</td>
-                            <td>65 or older</td>
-                        </tr>
+        <main class="main-content flex">
+            <section class="wrapper central text-center fl-basis-100sm-40md">
+                <p>We've selected a ticket based on voyage length and your age</p>
+                <table class="main-ticket central">
+                    <tr>
+                        <th>
+                            Price:
+                        </th>
+                        <td>
+                            <span>€ <span id="price"></span></span>
+                        </td>
+                    </tr>
     
-                        <tr>
-                            <td>20%</td>
-                            <td>40%</td>
-                        </tr>
-                    </tbody>
+                    <tr>
+                        <th>
+                            Discount:
+                        </th>
+                        <td>
+                            <span><span id="if_discount"></span></span>
+                        </td>
+                    </tr>
                 </table>
-            </div>
-            
-        </section>
+    
+                <button class="button flex central">
+                    <span>Continue</span>
+                    <i class="fas fa-chevron-right no-display-sm"></i>
+                </button>
+            </section>
+             
+            <section class="info central text-center fl-basis-100sm-40md">
+                <h2>Prices</h2>
+    
+                <div class="price">
+                    <div>Standard price is:</div>
+                    <div class="price-number"> € 0.21 per km</div>
+                </div>
+    
+                <div class="discounts">
+                    <h3>Discount</h3>
+    
+                    <table class="discount-table central">
+                        <thead>
+                            <th>Junior</th>
+                            <th>Senior</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Younger than 18</td>
+                                <td>65 or older</td>
+                            </tr>
+        
+                            <tr>
+                                <td>20%</td>
+                                <td>40%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
     </div>
     
     <script src="script/main.js"></script>

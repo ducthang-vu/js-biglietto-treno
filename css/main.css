@@ -23,10 +23,6 @@ a {
     display: flex;
 }
 
-.fl-basis-100-sm-md {
-    flex-basis: 100%
-}
-
 .fl-basis-100sm-40md{
     flex-basis: 100%
 }
@@ -46,7 +42,6 @@ a {
 
 /* CONTAINER and his header */
 .container {
-    flex-wrap: wrap;
     width: 325px;
     max-width: 90%;
 }
@@ -58,7 +53,13 @@ a {
     color: rgb(1, 160, 136);
 }
 
-/* WRAPPER */
+/* MAIN-CONTENT */
+.main-content {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* main-content: WRAPPER */
 .wrapper {
     width: 100%;
     padding: 30px;
@@ -67,12 +68,12 @@ a {
     border-radius: 10px 10px 0 0;
 }
 
-.main-content {
+.main-ticket {
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
-.main-content tr > * {
+.main-ticket tr > * {
     padding: 0px 10px;
     font-weight: 800;
     font-size: 20px;
@@ -97,7 +98,7 @@ a {
     background: rgb(1, 160, 136);
 }
 
-/* INFO */
+/* main-content: INFO */
 .info {
     width: 100%;
     padding: 30px;
@@ -118,7 +119,7 @@ a {
     font-weight: 600px;
 }
 
-/* info: DISCOUNT part*/
+/* main-content: info: DISCOUNT part*/
 .discounts {
     margin-top: 20px;
 }
@@ -146,7 +147,6 @@ a {
 
 /* Responsive */
 @media screen and (min-width: 600px) {
-
     .no-display-sm {
         display: block;
     }
@@ -155,7 +155,6 @@ a {
         width: 800px;
         max-width: 90%;
         padding: 40px 0;
-        justify-content: space-between;
     }
 
     .header h1 {
