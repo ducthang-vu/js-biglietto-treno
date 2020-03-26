@@ -8,6 +8,8 @@
 body {
     background-image: url('../img/background.jpg');
     background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
@@ -27,6 +29,10 @@ a {
 
 .fl-basis-100sm-40md{
     flex-basis: 100%
+}
+
+.no-display-sm {
+    display: none;
 }
 
 .central {
@@ -139,6 +145,11 @@ a {
 
 /* Responsive */
 @media screen and (min-width: 600px) {
+
+    .no-display-sm {
+        display: block;
+    }
+
     .container {
         width: 800px;
         max-width: 90%;
