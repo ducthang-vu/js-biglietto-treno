@@ -1,4 +1,4 @@
-/* A script for ticket pricing by: prompting user to enter distance and age, and considering discounts; and returning the price and a message on discount */
+/* A script for ticket pricing by: prompting user to enter distance and age, and considering discounts; and returning the price and a message on the applied discount */
 
 console.log('main.js is working')
 
