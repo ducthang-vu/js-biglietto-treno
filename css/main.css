@@ -63,6 +63,7 @@ a {
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+    align-items: center;
 }
 
 .main-content .container {
@@ -139,10 +140,14 @@ a {
     margin-bottom: 10px;
 }
 
+.discount-table {
+    margin-top: 5px;
+}
+
 .discount-table th,
 .discount-table td {
     padding: 5px 15px;
-    width: 50%;
+    max-width: 100px;
 }
 
 .discount-table th:first-child,
@@ -167,7 +172,7 @@ footer .container {
 
 
 /* Responsive */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
     .no-display-sm {
         display: block;
     }
