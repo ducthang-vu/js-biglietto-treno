@@ -41,6 +41,11 @@ a {
     text-align: center;
 }
 
+/* APP */
+.app {
+    flex-direction: column;
+}
+
 
 /* HEADER */
 .header h1 {
@@ -52,6 +57,7 @@ a {
 
 /* MAIN-CONTENT */
 .main-content {
+    flex-grow: 1;
     padding: 30px;
     background-image: url('../img/background.png');
     background-position: bottom;
@@ -158,10 +164,15 @@ footer .container {
   }
 
 
+
 /* Responsive */
 @media screen and (min-width: 600px) {
     .no-display-sm {
         display: block;
+    }
+    
+    .fl-basis-100sm-40md{
+        flex-basis: 40%
     }
 
     .container {
@@ -170,14 +181,18 @@ footer .container {
         padding: 40px 0;
     }
 
+    .app {
+        height: 100vh;
+    }
+
     .header h1 {
         font-size: 250%;
     }
 
-    .fl-basis-100sm-40md{
-        flex-basis: 40%
+    .main-content {
+        padding: 0;
     }
-
+    
     .wrapper {
         border-radius: 15px;
         order: 1;
