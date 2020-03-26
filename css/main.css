@@ -80,6 +80,7 @@ a {
 
 .button {
     height: 55px;
+    width: 200px;
     padding: 0 10px;
     justify-content: space-around;
     align-items: center;
