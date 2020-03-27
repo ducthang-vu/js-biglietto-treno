@@ -10,8 +10,8 @@ var age_senior = 65
 var age_young = 18
 
 // Variables entered by user
-var distance = prompt('Enter voyage length in km: ')
-var age = prompt('How old are you?')
+var distance = parseInt(prompt('Enter voyage length in km: '))
+var age = parseInt(prompt('How old are you?'))
 
 console.log(distance)
 console.log(age)
